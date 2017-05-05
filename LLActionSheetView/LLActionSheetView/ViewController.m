@@ -25,7 +25,7 @@
 
 - (IBAction)actionSheetClick:(id)sender {
     
-    NSArray *arr = @[@"相机",@"相册",@"保存图片"];
+    NSArray *arr = @[@"相机",@"相册",@"保存图片",@"发送给朋友"];
     
     LLActionSheetView *sheetV = [[LLActionSheetView alloc]initWithTitleArray:arr andShowCancel:YES];
     sheetV.delegate = self;
@@ -36,6 +36,8 @@
     };
     [self.view.window addSubview:sheetV];
 }
+
+
 
 - (void)actionSheetView:(LLActionSheetView *)actionSheetView clickButtonAtIndex:(NSInteger)Index{
     NSLog(@"delegate--%zd",Index);
