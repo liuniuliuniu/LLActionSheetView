@@ -1,6 +1,7 @@
 # LLActionSheetView
 
- /Users/dayingxiangkeji/Desktop/LLActionSheetViewAnim.gif
+![LLActionSheetViewAnim.gif](http://upload-images.jianshu.io/upload_images/1030171-6580fc7249414a67.gif?imageMogr2/auto-orient/strip)
+
 ####示例代码
 ```
 // 显示的数组数据
