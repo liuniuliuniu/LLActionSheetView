@@ -18,9 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
 }
 
 - (IBAction)actionSheetClick:(id)sender {
@@ -29,16 +26,14 @@
     
     LLActionSheetView *sheetV = [[LLActionSheetView alloc]initWithTitleArray:arr andShowCancel:YES];
     sheetV.delegate = self;
-    
     // block回调
     sheetV.ClickIndex = ^(NSInteger index) {
         NSLog(@"block--%zd",index);
     };
-    [self.view.window addSubview:sheetV];
+    [sheetV show];
+    
 }
-
-
-
+// delegate
 - (void)actionSheetView:(LLActionSheetView *)actionSheetView clickButtonAtIndex:(NSInteger)Index{
     NSLog(@"delegate--%zd",Index);
 }

@@ -26,7 +26,6 @@
 // 支持block
 @property (nonatomic,copy) void (^ClickIndex) (NSInteger index);
 
-
 /**
  根据数组进行文字显示,返回index
  @param titleArr 传入显示的数组
@@ -36,7 +35,7 @@
 - (instancetype)initWithTitleArray:(NSArray *)titleArr
                      andShowCancel:(BOOL )show;
 
-
+- (void)show;
 
 
 @end
